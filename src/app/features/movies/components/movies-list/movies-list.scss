@@ -31,6 +31,11 @@
 
     @include mixins.tablet {
       justify-content: center;
+      align-items: center;
+    }
+
+    @include mixins.mobile {
+      justify-content: center;
     }
   }
 }
