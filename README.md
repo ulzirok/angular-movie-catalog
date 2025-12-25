@@ -3,7 +3,7 @@ Movie App — приложение для просмотра каталога ф
 
 Проект выполнен в рамках тестового задания.
 
-## Ссылка на демо: 
+## Ссылка на демо: https://ulzirok.github.io/angular-movie-catalog/movies
 
 ## Автор: 
 Улзира Пердебаева
@@ -32,4 +32,7 @@ API-ключ хранится в environment файле и не добавлен
 3. Добавьте в него токен.
 
 ## Скриншоты:
+![Main page](./screenshots/main.jpg)
+![Details page](./screenshots/details.jpg)
+
 
