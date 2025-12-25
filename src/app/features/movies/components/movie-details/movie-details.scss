@@ -1,0 +1,61 @@
+@use '../../../../../styles/mixins' as mixins;
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  gap: 25px;
+
+  @include mixins.mobile {
+    gap: 15px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include mixins.mobile {
+      gap: 15px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: var(--color-accent);
+
+      @include mixins.mobile {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      color: var(--color-gray-light);
+    }
+  }
+
+  &__img {
+    width: 500px;
+    border-radius: 7px;
+  }
+
+  &__text {
+    font-weight: 700;
+    color: var(--color-yellow);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.material-symbols-outlined {
+  font-size: 16px;
+  color: var(--color-yellow);
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+}

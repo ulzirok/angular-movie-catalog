@@ -1,0 +1,10 @@
+<section class="movies-details">
+  <div class="container">
+    @if(movie$ | async; as movie) {
+    <app-movie-details [movie]="movie"></app-movie-details>
+    }
+    @else {
+    <app-loader></app-loader>
+    }
+  </div>
+</section>

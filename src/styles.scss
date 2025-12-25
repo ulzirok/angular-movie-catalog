@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/variables';
+@import 'styles/mixins.scss';
+
+* {
+  // outline: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  background: linear-gradient(to bottom right,
+      rgba(#121829, 0.14),
+      rgba(#0F243C, 0.47),
+      rgba(#191A40, 0.91));
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+}
+
+main {
+  flex: 1;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1276px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include mobile {
+    max-width: 380px;
+  }
+}

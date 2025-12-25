@@ -1,0 +1,16 @@
+<main class="details">
+  <article>
+    <section class="details__left">
+      <img [src]="'https://image.tmdb.org/t/p/w500' + movie.backdrop_path" [alt]="movie.title" class="details__img" />
+    </section>
+    <section class="details__right">
+      <h2 class="details__title">{{movie.title}}</h2>
+      <p class="details__icon"><span class="details__text">Rating: </span> <span
+          class="material-symbols-outlined">star</span> {{movie.vote_average | number: '1.2-2'}}</p>
+      <time>
+        <p class=""><span class="details__text">Release: </span> {{movie.release_date | date:'longDate'}}</p>
+      </time>
+      <p class=""><span class="details__text">Overview: </span> {{movie.overview}}</p>
+    </section>
+  </article>
+</main>

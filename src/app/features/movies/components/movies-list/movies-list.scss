@@ -1,0 +1,49 @@
+@use '../../../../../styles/mixins' as mixins;
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  gap: 15px;
+
+  @include mixins.mobile {
+    justify-content: center;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    @include mixins.mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mixins.tablet {
+      justify-content: center;
+    }
+  }
+}
+
+.title {
+  color: var(--color-gray-light);
+}
+
+app-loader {
+  width: 100%;
+}
+
+.error-text {
+  width: 100%;
+  text-align: center;
+}

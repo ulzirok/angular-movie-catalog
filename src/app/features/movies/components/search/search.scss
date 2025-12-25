@@ -1,0 +1,42 @@
+@use '../../../../../styles/mixins' as mixins;
+
+.search {
+  position: relative;
+  width: 380px;
+
+  @include mixins.mobile {
+    width: 300px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-gray-dark);
+    border-radius: 7px;
+    padding: 8px 10px;
+    outline: none;
+
+    &:focus {
+      color: var(--color-gray-light);
+      border: 1px solid var(--color-gray-light);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-gray-dark);
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
+
+    &-icon {
+      color: var(--color-gray-dark);
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+}

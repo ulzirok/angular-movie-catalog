@@ -1,0 +1,9 @@
+<article class="movie-card">
+  <div [style.background-image]="'url(' + getPosterUrl(movie?.poster_path) + ')'" class="movie-card__img">
+    <div class="movie-card__rate">
+      <span class="material-symbols-outlined">star</span>
+      <span class="movie-card__number">{{movie?.vote_average | number: '1.2-2'}}</span>
+    </div>
+  </div>
+  <p class="movie-card__name">{{movie?.title}}</p>
+</article>
