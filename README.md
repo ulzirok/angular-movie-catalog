@@ -15,7 +15,6 @@ Movie App — приложение для просмотра каталога ф
 - Загрузка данных с внешнего API
 - Адаптивная верстка
 
-
 ## Технологии:
 - Angular
 - TypeScript
@@ -30,15 +29,7 @@ API-ключ хранится в environment файле и не добавлен
 
 1. Получите токен на сайте https://www.themoviedb.org/
 2. Создайте файл `environment.ts` в папке `src/environments`
-3. Добавьте в него токен:
-
-```ts
-export const environment = {
-  apiUrl: 'https://api.themoviedb.org/3',
-  token: 'ACCESS_TOKEN'
-};
+3. Добавьте в него токен.
 
 ## Скриншоты:
-
-
 
